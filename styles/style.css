@@ -1,0 +1,160 @@
+/* ===========================================
+   ATLASANDS - Premium Glassmorphism Theme
+   =========================================== */
+
+/* Hide Streamlit default elements */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* Main background */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #08131f 0%,
+        #0d1b2a 50%,
+        #13293d 100%
+    );
+}
+
+/* Typography */
+html,
+body,
+[class*="css"] {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-weight: 700;
+}
+
+/* Paragraphs */
+p,
+label,
+span {
+    color: #d8d8d8;
+}
+
+/* Glass Card */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border-radius: 28px;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+
+/* Images */
+img {
+    border-radius: 18px;
+}
+
+/* Buttons */
+.stButton > button {
+    width: 100%;
+    border-radius: 14px;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.stButton > button:hover {
+    transform: scale(1.03);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #0b1724;
+}
+
+/* Metrics */
+[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    padding: 15px;
+}
+
+/* Chat messages */
+[data-testid="stChatMessage"] {
+    border-radius: 16px;
+}
+
+/* Inputs */
+.stTextInput input,
+.stNumberInput input,
+textarea {
+    border-radius: 12px;
+}
+
+/* Select boxes */
+.stSelectbox {
+    border-radius: 12px;
+}
+
+/* Progress bar */
+.stProgress > div > div {
+    border-radius: 10px;
+}
+
+/* Tables */
+table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.hero {
+    animation: fadeUp 0.5s ease-in-out;
+}
